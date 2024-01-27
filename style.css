@@ -22,10 +22,21 @@ body > * {
 }
 .colum-img {
     background-image: url(./images/arquitectura.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .colum-form {
     background-color: rgb(238, 238, 238);
+    display: grid;
+    grid-template-rows: 40% 20% 40%;
 }
 .imputs-continer {
     background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    padding: 20px;
+}
+.imputs-continer > h3 {
+    grid-column: 1/3;
 }
