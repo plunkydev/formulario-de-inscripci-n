@@ -2,6 +2,30 @@
     font-family: futura-font;
     src: url(./fonts/FutuBk.ttf);
 }
+
 body {
+    background-color: black;
     font-family: futura-font, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr min(74ch, 100%) 1fr;
+}
+body > * {
+    grid-column: 2;
+}
+.main-continer {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    height: 100vh;
+}
+.colum-img {
+    background-image: url(./images/arquitectura.jpg);
+}
+.colum-form {
+    background-color: rgb(238, 238, 238);
+}
+.imputs-continer {
+    background-color: white;
 }
