@@ -1,0 +1,7 @@
+@font-face {
+    font-family: futura-font;
+    src: url(./fonts/FutuBk.ttf);
+}
+body {
+    font-family: futura-font, sans-serif;
+}
