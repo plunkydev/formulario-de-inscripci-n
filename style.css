@@ -25,6 +25,17 @@ body > * {
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.logo-continer {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .colum-form {
     background-color: rgb(238, 238, 238);
@@ -46,19 +57,57 @@ h4 {
 
 p {
     font-size: 0.8rem;
+    line-height: 1.5rem;
 }
+
+p > a {
+    cursor: pointer;
+    color: #596D48;
+}
+button {
+    background-color: #596D48;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 3px;
+}
+
+label {
+    font-size: 0.8rem;
+}
+.inputs-item {
+    display: grid;
+}
+
+input {
+    border: 2px solid #E5E7EB;
+    border-radius: 3px;
+}
+
+input:focus {
+    border-width: 0px;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 33%);
+    outline: solid 2px #3380ce;
+    border-radius: 2px;
+    outline-offset: 1px
+}
+
 .imputs-continer {
     background-color: white;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 40px 40px 40px;
-    padding: 12px 12px 5px 12px;
+    padding: 12px;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 33%);
+    z-index: 3;
+    gap: 5px;
 }
 .imputs-continer > h4 {
     grid-column: 1/3;
 }
 .create-account {
     background-color: rgb(238, 238, 238);
+    padding-top: 20px;
 }
 
 @media (max-width: 500px) {
@@ -69,6 +118,9 @@ p {
     }
     .colum-img {
         height: 100vh;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
     }
     .create-account {
         background-color: rgb(238, 238, 238);
