@@ -75,8 +75,10 @@ button {
 label {
     font-size: 0.8rem;
 }
+
 .inputs-item {
     display: grid;
+    grid-template-rows: 34% 56% 10%;
 }
 
 input[type="text"], input[type="email"], input[type="tel"] {
@@ -97,7 +99,7 @@ input:focus {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px 40px 40px 40px;
-    padding: 12px;
+    padding: 12px 12px 15px 12px;
     box-shadow: 2px 3px 4px rgb(0 0 0 / 33%);
     z-index: 3;
     gap: 5px;
@@ -105,6 +107,7 @@ input:focus {
 .imputs-continer > h4 {
     grid-column: 1/3;
 }
+
 .create-account {
     background-color: rgb(238, 238, 238);
     padding-top: 20px;
@@ -113,6 +116,12 @@ input:focus {
 .error {
     border: 2px solid #de5570;
     border-radius: 3px;
+}
+#match {
+    color: #de5570;
+    font-size: 0.6rem;
+    margin: 0;
+    line-height: 15px;
 }
 
 @media (max-width: 500px) {
