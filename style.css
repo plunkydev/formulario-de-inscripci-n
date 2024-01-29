@@ -84,9 +84,10 @@ label {
 input[type="text"], input[type="email"], input[type="tel"] {
     border: 2px solid #E5E7EB;
     border-radius: 3px;
+    margin: 3px 0 0 0;
 }
 
-input:focus {
+input:focus:not(.error) {
     border-width: 0px;
     box-shadow: 2px 3px 4px rgb(0 0 0 / 33%);
     outline: solid 2px #3380ce;
@@ -116,7 +117,17 @@ input:focus {
 .error {
     border: 2px solid #de5570;
     border-radius: 3px;
+    margin: 3px 0 0 0;
 }
+.error:focus {
+    border-width: 0px;
+    box-shadow: 2px 3px 4px rgb(0 0 0 / 33%);
+    outline: solid 2px #de5570;
+    border-radius: 2px;
+    outline-offset: 1px
+}
+
+
 #match {
     color: #de5570;
     font-size: 0.6rem;
