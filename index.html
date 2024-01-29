@@ -37,7 +37,7 @@
                     </div>
                     <div class="inputs-item">
                         <label for="phone">Telefono</label>
-                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" name="phone"/>
+                        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" name="phone"/>
                     </div>
                     <div class="inputs-item">
                         <label for="password">Contraseña</label>
@@ -46,7 +46,7 @@
                     </div>
                     <div class="inputs-item">
                         <label for="password-confir">Confirmar Contraseña</label>
-                        <input  class="error" type="password" id="password-confir" name="password-confir" required>
+                        <input oninput="comprobarContrasenas()"  class="error" type="password" id="password-confir" name="password-confir" required>
                     </div>
                 </div> 
                 <div class="form-seccion create-account">

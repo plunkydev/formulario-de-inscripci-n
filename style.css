@@ -138,6 +138,21 @@ input:focus:not(.error) {
     line-height: 15px;
 }
 
+.borde-focus {
+    border-width: 0px;
+    box-shadow: 2px 3px 4px rgba(21, 104, 35, 0.506);
+    outline: solid 2px #596D48;
+    border-radius: 2px;
+    outline-offset: 1px
+}
+.borde-focus:focus {
+    border-width: 0px;
+    box-shadow: 2px 3px 4px rgba(21, 104, 35, 0.506);
+    outline: solid 2px #596D48;
+    border-radius: 2px;
+    outline-offset: 1px
+}
+
 @media (max-width: 500px) {
     .main-continer {
         display: grid;
