@@ -79,7 +79,7 @@ label {
     display: grid;
 }
 
-input {
+input[type="text"], input[type="email"], input[type="tel"] {
     border: 2px solid #E5E7EB;
     border-radius: 3px;
 }
@@ -108,6 +108,11 @@ input:focus {
 .create-account {
     background-color: rgb(238, 238, 238);
     padding-top: 20px;
+}
+
+.error {
+    border: 2px solid #de5570;
+    border-radius: 3px;
 }
 
 @media (max-width: 500px) {
